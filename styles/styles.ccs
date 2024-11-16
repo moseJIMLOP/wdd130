@@ -1,0 +1,19 @@
+nav a {
+    background-color: lilac;
+    padding: 20px;
+}
+nav a {
+    color: apple green;
+    display: block; 
+    padding: 20px;
+}
+h1 {
+    color: lilac;
+}
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2xp;
+    box-shadow: 0 0 30px pink;
+}
