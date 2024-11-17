@@ -1,11 +1,11 @@
-nav a {
+nav {
     background-color: lilac;
-    padding: 20px;
+    padding: 10px;
 }
 nav a {
     color: #8DB600;
-    padding: 10px;
     display: block; 
+    padding: 10px;
 }
 h1 {
     color: lilac;
