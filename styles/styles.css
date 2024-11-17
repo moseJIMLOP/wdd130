@@ -22,11 +22,11 @@ p {
 aside {
     width: 20em;
     margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2)
+    border: 1px solid rgba(136, 13, 155, 0.2);
     padding: 1em;
-    background-color: #eee;
+    background-color: #00ffff;
     color: #333;
-    text-aling: center;
+    text-align: center;
 }
 
 aside img {
