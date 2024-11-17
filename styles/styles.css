@@ -1,5 +1,8 @@
 nav a {
     background-color: lilac;
+    padding: 20px;
+}
+nav a {
     color: #8DB600;
     padding: 10px;
     display: block; 
@@ -10,7 +13,7 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(137, 33, 153);
     padding: 2px;
     box-shadow: 0 0 30px pink;
 }
@@ -36,6 +39,6 @@ aside img {
 
 footer { 
     margin-top: 1em;
-    border-top: 1px solid #000;
+    border-top: 1px solid #d2dc4b;
     text-align: center; 
 }
