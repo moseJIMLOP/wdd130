@@ -55,6 +55,9 @@ h1 {
     background-color: var(--accent1-color);
     color: #000000;
 }
+.oculto {
+    display: none;
+}
 .hero article img {
     float: right;
     width: 125px;
