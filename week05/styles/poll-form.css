@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  color: rgb(23, 22, 27);
+  background-color: #d1cbeb;
+}
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: rgb(27, 5, 39);
+    text-align: center;
+}
+form {
+    width: 650px;
+    margin: center auto;
+    padding: 1rem;
+    border:rgb(27, 5, 39);
+    border-radius: 0%;
+    background-color: rgba(73, 58, 99, 0.434);
+    display: grid;
+}
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem;
+    border:rgb(139, 35, 243);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: rgb(2, 11, 61);
+    font-size: 1.2em;
+}
+label, input, button, select, textarea {
+    font-family: 'Quicksand', sans-serif;
+}
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1em;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+button {
+    margin: 1rem;
+    background-color: rgb(19, 2, 33);
+    color:rgb(162, 117, 197);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    padding: .75rem;
+    font-size: 1.2em;
+}
+button:hover {
+    background-color: #2e2398;
+}
+footer {
+  margin: 1rem auto 0;
+  width: 650px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #3d2d46;
+  border-top: 1px solid #061d2dde;
+}
