@@ -74,6 +74,15 @@ header, footer {
     max-width: 840px;
     margin: 0 auto; 
 }
+header {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: flex-end;
+    background-color: aquamarine;
+    align-items: center;
+    padding: 20px;
+    height: 20px;
+}
 
 /*Class Selector"*/
 
