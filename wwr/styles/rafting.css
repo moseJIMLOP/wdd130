@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #729334;
-    --secondary-color: #96C442;
-    --accent1-color: #80852E; 
-    --accent2-color: #D9CC41; 
+    --primary-color: #1E3A8A;
+    --secondary-color: #3B82F6;
+    --accent1-color: #BFDBFE; 
+    --accent2-color: #111827; 
     --heading-font:"Merriweather Sans", sans-serif;
     --body-font:"PT Sans", sans-serif;
 }
@@ -13,14 +13,21 @@
 }
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--accent2-color);
 }
-header, main, footer {
-    max-width: 840px;
+header, footer {
+    max-width: 1400px;
     margin: 0 auto;
 }
+main {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
 header img {
-    height: 60px;
+    height: 80px;
     grid-column: 1/2;
     justify-self: start;
 }
@@ -28,24 +35,37 @@ header {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--primary-color);
-    gap: 20px;
 }
 nav, p, section, article {
     margin: 20px;
     padding: 10px;
 }
 nav {
-    grid-column: 2/3;
-    justify-self: end;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
 }
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}   
+
 nav ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
 }
 nav ul li a{
     text-decoration: none;
@@ -59,19 +79,21 @@ nav ul li a{
     text-decoration: none;
 }
 .hero {
-    margin: 10px auto;
     position: relative;
-    text-align: center;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    height: 600px;
+    overflow: hidden;
 }
 .hero img {
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-
 }
+
 h1 {
     position: absolute;
     top: 25%;
@@ -82,7 +104,7 @@ h1 {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color: #000000;
+    color: var(--accent2-color);
 }
 .oculto {
     display: none;
@@ -107,7 +129,7 @@ section {
     align-items: center;
     text-align: left;
     background-color: var(--accent2-color);
-    color: black;
+    color: var(--accent1-color);
     padding: 10px;
     opacity: 0.8;
     width: 70%;
@@ -122,4 +144,98 @@ section {
     max-width: 100%;
     height: auto;
     margin-left: 15px;
+}
+.content-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+#history {
+  text-align: right;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+}
+#history h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 5px;
+}
+#history p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+#history img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+}
+.footer-left {
+  flex: 1;
+}
+footer p {
+  flex: 2;
+  text-align: center;
+  margin: 0;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.socialmedia a img {
+  width: 30px;
+  height: 30px;
+  transition: filter 0.3s ease;
+}
+.socialmedia a:hover img {
+  filter: brightness(0.8) invert(0.7);
+}
+section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:last-of-type h2 {
+    margin-bottom: 1rem;
+    color: var(--accent1-color);
+    font-size: 1.8rem;
+}
+section:last-of-type img {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+section:last-of-type {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  
+    gap: 10px;
+}
+
+.adventure-gallery img {
+    width: 100%;                 
+    height: auto;
+    border-radius: 40px;
+    object-fit: cover;
 }
